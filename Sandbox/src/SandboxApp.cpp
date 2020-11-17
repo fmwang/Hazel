@@ -56,7 +56,6 @@ private:
 Sandbox::Sandbox()
 {
 	PushLayer(new ExampleLayer());
-	PushOverlay(new Hazel::ImGuiLayer());
 }
 
 Sandbox::~Sandbox()
