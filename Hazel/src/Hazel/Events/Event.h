@@ -1,6 +1,6 @@
 #pragma once
 #include "hzpch.h"
-#include "Hazel/Core.h";
+#include "Hazel/Core.h"
 
 namespace Hazel {
 	// Events in Hazel are currently blocking, meaning when an event occurs it

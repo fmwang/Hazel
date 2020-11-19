@@ -1,4 +1,5 @@
 #include <Hazel.h>
+#include "imgui/imgui.h"
 
 #include <glm/vec3.hpp> // glm::vec3
 #include <glm/vec4.hpp> // glm::vec4
@@ -28,6 +29,13 @@ public:
 		if (Hazel::Input::IsKeyPressed(HZ_KEY_TAB)) {
 			HZ_INFO("Tab key is pressed (poll)!");
 		}
+	}
+
+	void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World!");
+		ImGui::End();
 	}
 
 	void OnEvent(Hazel::Event& event) override
